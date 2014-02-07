@@ -1,0 +1,80 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Travelling_varanasi.PanoramaPage8"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False" Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot" >
+        <controls:Panorama Title= "varanasi the cultural capital of india" FontFamily="Segoe WP"  Margin="8,22,-8,-22" Foreground="#EFA52E" FontSize="16.85">
+            <controls:Panorama.Background>
+                <ImageBrush ImageSource="Images/panobg.png"></ImageBrush>
+            </controls:Panorama.Background>
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="travelling" FontFamily="Segoe WP" Foreground="#FF6A1F18">
+                <Grid>
+                    <Image Height="290" HorizontalAlignment="Left" Margin="10,10,0,0" Name="image0" Stretch="Fill" VerticalAlignment="Top" Width="413" Source="IMAGES/blak.png" />
+
+                    <TextBlock Height="197" HorizontalAlignment="Left" FontFamily="Segoe WP" Margin="41,46,0,0" Name="textBlock1" Text="Varanasi is located in Uttar Pradesh, in the northern region of India.Tourist can reach varanasi via airways, Railway or buses too. varanasi's babatpur International Airport connects the city with the rest of the world as well as other Indian cities. varanasi is well connected by rail and buses to all the major cities of India." TextWrapping="Wrap" VerticalAlignment="Top" Width="342" FontSize="16.85" FontWeight="Normal" Foreground="#FFEFA52E" />
+                </Grid>
+            </controls:PanoramaItem>
+
+
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="airways" Foreground="#FF6A1F18" FontFamily="Segoe WP">
+                <controls:PanoramaItem.Background>
+                    <ImageBrush ImageSource="Images/air_india_Flight%20crash%20image1.jpg" />
+                </controls:PanoramaItem.Background>
+                <Grid>
+                    <Image Height="290" HorizontalAlignment="Left" Margin="3,214,0,0" Name="image3" Stretch="Fill" VerticalAlignment="Top" Width="413" Source="IMAGES/blak.png" />
+                    <TextBlock Height="222" Margin="26,241,38,0" FontFamily="Segoe WP" Name="textBlock3" Text="Varanasi is well connected and accessible to major Indian cities and tourist spots. There are daily domestic flights to and from Varanasi to several cities in India. Apart from the state owned Indian Airlines, there are many private air taxi operators that offer their services from Varanasi to other Indian cities. In fact, the daily flights on Delhi-Agra-Khajuraho-Varanasi route are quite popular among the tourists. " TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Normal" Foreground="#FFEFA52E" FontSize="16.85" />
+                </Grid>
+            </controls:PanoramaItem>
+
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="railway" Foreground="#FF6A1F18" FontFamily="Segoe WP">
+                <controls:PanoramaItem.Background>
+                    <ImageBrush ImageSource="Images/railway.jpg" />
+                </controls:PanoramaItem.Background>
+                <Grid>
+                    <Image Height="290" HorizontalAlignment="Left" Margin="3,216,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="413" Source="IMAGES/blak.png" />
+                    <TextBlock Height="210" HorizontalAlignment="Left" Margin="24,236,24,0" FontFamily="Segoe WP" Name="textBlock4" Text="Since Varanasi lies in the heartland of the North Indian plains, it is well connected to Delhi, varanasi, Mumbai and other parts of India. There are two railway stations in Varanasi, the Kashi Junction and the Varanasi Junction (also known as Varanasi Cantonment). Rajdhani Express from Delhi or from Calcutta passes through Varanasi too. One can also catch trains from Mughalsarai, just 10 km south of Varanasi. " TextWrapping="Wrap" VerticalAlignment="Top" Width="361" FontWeight="Normal" Foreground="#FFEFA52E" FontSize="16.85" />
+                </Grid>
+            </controls:PanoramaItem>
+
+             <!--Panorama item 3-->
+            <controls:PanoramaItem Header="bus" Foreground="#FF6A1F18" FontFamily="Segoe WP" >
+                <controls:PanoramaItem.Background>
+                    <ImageBrush ImageSource="Images/buswa.jpg" />
+                </controls:PanoramaItem.Background>
+                <Grid>
+                    <Image Height="276" HorizontalAlignment="Left" Margin="2,220,0,0" Name="image4" Stretch="Fill" VerticalAlignment="Top" Width="415" Source="IMAGES/blak.png" />
+                    <TextBlock Height="214" HorizontalAlignment="Left" Margin="24,285,24,0" FontFamily="Segoe WP" Name="textBlock5" Text="Situated in the flat Ganga plains, Varanasi has a good network of roads. frequent public and private buses and road transport to all the major towns of Uttar Pradesh and nearby areas." TextWrapping="Wrap" VerticalAlignment="Top" Width="349" FontWeight="Normal" Foreground="#FFEFA52E" />
+                </Grid>
+            </controls:PanoramaItem>
+
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="varanasi map" Foreground="#FF6A1F18" FontFamily="Segoe WP">
+                <controls:PanoramaItem.Background>
+                     <ImageBrush ImageSource="Images/varanasi-city-map.jpg" /> 
+                </controls:PanoramaItem.Background>
+                
+            </controls:PanoramaItem>
+        </controls:Panorama>
+        </Grid>
+
+    <!--Panorama-based applications should not show an ApplicationBar-->
+
+</phone:PhoneApplicationPage>
